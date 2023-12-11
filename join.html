@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <style>
+
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        body{background-color: white;}
+        fieldset{
+            color: black;
+        }
+        div{
+            background-color: white;
+        }
+        label{
+        text-align: left;
+        position: absolute;
+        left: 840px;
+        }
+       input{
+        font-size: 15px;
+        color: black;
+        position: absolute;
+        left: 940px;
+        border: 2px solid blue;
+       }
+#회{
+    color: black;
+}
+    
+    </style>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <p>회원 정보를 기입해주세요.</p>
+    <div>
+        <form method="post" action="process.jsp">
+                <label for="name">ID :</label>
+                <input type="text" name="name" id="text1"/><br>
+                <br>
+                <label for="password">Password :</label>
+                <input type="password" name="password1"><br>
+                <br>
+                <label for="password2">Password* :</label>
+                <input type="password" name="password2"><br>
+                <br>
+                <label for="name">Name :</label>
+                <input type="text" name="name"><br>
+                <br>
+                <label for="tel">Tel :</label>
+                <input type="tel" name="tel"><br>
+                <br>
+                <label for="email">Email :</label>
+                <input type="email" name="email"><br>
+                <br>
+                <label for="dob">Birth :</label>
+                <input type="date" name="dob"><br>
+                <br>
+            <input type="submit" name="submit" value="회원가입" id="회">
+        </form>
+    </div>
+</body>
+</html>

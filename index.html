@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account of the stars</title>
+    <style>
+    .menubar li{
+     text-align: center;
+     display: inline;
+     border-color: black;
+     background-color: white;
+     border-radius: 20px;
+     margin: 0;
+     padding: .5em;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     size: 20px;
+    }
+    a{
+        text-decoration:none;
+    }
+
+    a:hover{
+        color: blue;
+    }
+    nav{
+     position: absolute;
+     top: 180px;
+     left: 810px;
+    }
+
+    header{
+        width: 100%;
+        height: 50px;
+    }
+
+    section{
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        width: 70%;
+        height: 200px;
+        float: right;
+    }
+
+    footer{
+        position: absolute;
+        top:1200px;
+        color: white;
+        padding: 90px;
+        clear: both;
+    }
+
+    body{
+    height: 4500px;
+    background-color: black;
+    background-repeat: no-repeat; 
+    }
+
+    h1{
+        position: absolute;
+        top: 100px;
+        left: 810px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    h2{
+        position: absolute;
+        top: 70px;
+        left: 835px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        opacity: 80%;
+    }
+    form{ 
+        text-decoration:none;
+        position: absolute;
+        top: 200px;
+        left: 1600px;
+        text-align: right;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    form:hover{
+        color: white;
+    }
+
+    #log{
+        columns: white;
+        text-decoration:none;
+    }
+
+    #log:visited{
+        color: white;
+    }
+
+    #log:hover{
+
+        color: white;   
+    }
+    
+    #m{
+        width: 3cm;
+        height: 3cm;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+    
+
+    </style>
+
+</head>
+<body>
+    <img id="m" src="moonmouse.png">
+    <header>
+        <h1>Account of the stars</h1>
+        <h2>별의 해석 : 우주의 이야기</h2>
+    </header>
+    <form action="login.jsp" method="get">
+        <a href="join.html" id="log" target="_blank">join us / log in</a><br>
+        아이디 : &nbsp; <input type="text" name="user"><br>
+        비밀번호 : <input type="password" name="pass"><br>
+        <input type="submit" value="로그인">
+    </form>
+    <nav>
+        <ul class="menubar">
+            <li><a href="planet.html">Planet</a></li>
+            <li><a href="Zodiac.html">Zodiac sign</a></li>
+            <li><a href="https://stellarium-web.org/">Observatory</a></li></li>
+        </ul>
+    </nav>
+    <section>
+        <img id="i" src="i1.jpg">
+ <script>
+    let num=0;
+    function show(){
+    if(num==0){
+       document.getElementById("i").src="i2.jpg";
+       num=1;
+             }
+       else if(num==1){
+           document.getElementById("i").src="i3.jpg";
+           num=2;
+           }
+        else if(num==2){
+            document.getElementById("i").src="i4.jpg";
+            num=3;
+        }
+       else{
+           document.getElementById("i").src="i1.jpg";
+           num=0;}
+       setTimeout('show()',1000);}
+   show();
+        </script>
+    </section>
+    <footer>
+        <p>Ⓒ 별의 해석 </p>
+        <h6> 우주의 다양한 이야기를 들어보세요. </h6>
+        <h6>고객센터 : 02-0000-0000</h6>
+
+    </footer>
+</body>
+</html>
